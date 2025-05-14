@@ -1,0 +1,53 @@
+- Criar projeto react e configurar
+
+- Criar um componente de input
+    - Ele espera receber uma prop que é uma string, que é a label que irá na parte superior da string
+    - O input será um pouco arredondado
+
+- Criar uma API com um endpoint ficticio
+    - Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
+        - controller (login)
+            - Verifica se o que foi recebido no body se o e-mail é igual a admin@admin.com e a senha é igual a 123456
+                - Se sim retorna status 200
+                - Se não retorna "Usuário ou senha inválidos" com status 401
+
+- Tela de login estilizada com tawildin
+    - Terá 2 campos de escrever, um será de e-mail e o outro de senha
+    - Botão de entrar
+        - Ao clicar no botão de entrar 
+            - Deve ser feito uma requição chamando o endpoint de login da API criada
+                - Se retorna 200 ele só vai para a tela de dashboard
+                - Se retorna 401, exibi a mensagem e não vai para a tela de dashboard
+
+- Testes
+    - Unitarios (Jest)
+        - Testar se ao pegar o inputComponent e passar o nome do label se ele renderiza essa label
+
+    - E2E (Cypress)
+        - Fluxo login
+            - Login certo usando "admin@admin.com" e "123456"
+                - Preciso que o campo de e-mail seja preenchido com "admin@admin.com"
+                - Preciso que o campo de senha seja preenchido com "123456"
+                - Clicar no botão entrar
+                    - Usar o intercept para simular a requisição retornando o status 200
+                - Após o retorno ele tem que verificar se está na tela de dashboard
+
+            - Login errado sem "admin@admin.com" e "123456"
+                - Preciso que o campo de e-mail seja preenchido com "user@admin.com"
+                - Preciso que o campo de senha seja preenchido com "1234"
+                - Clicar no botão entrar
+                    - Usar o intercept para simular a requisição retornando o status 401 e a mensagem "Usuário ou senha inválidos"
+                - Ver se "Usuário ou senha inválidos" é exibido na tela
+
+            - Testar API Login errado sem "admin@admin.com" e "123456"
+                - Preciso de um array de objetos contendo os campos e-mail e password
+                    - email: "admin@admin.com" e senha "12345"
+                    - email: "user@admin.com" e senha "123456"
+                    - email: "user@admin.com" e senha "12345"
+                - Gero um loop usando esse array onde  
+                    - Faço o .request() para o endpoint de login enviando os dados de e-mail e password
+                        - O retorno em todos tem que ter o status 401 e a mensagem "Usuário ou senha inválidos"
+
+            - Testar API Login certo com "admin@admin.com" e "123456"
+                - Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
+                    - O retorno tem que ser um status 200
