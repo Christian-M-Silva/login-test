@@ -4,6 +4,10 @@
     - Ele espera receber uma prop que é uma string, que é a label que irá na parte superior da string
     - O input será um pouco arredondado
 
+- Criar um componente de botão
+    - Ele espera receber uma prop que é uma string, que é a label que ficará no botão
+    - Ver uma estilização para o botão
+
 - Criar uma API com um endpoint ficticio
     - Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
         - controller (login)
@@ -13,15 +17,22 @@
 
 - Tela de login estilizada com tawildin
     - Terá 2 campos de escrever, um será de e-mail e o outro de senha
-    - Botão de entrar
+    - Botão de entrar com o componente de botão
         - Ao clicar no botão de entrar 
             - Deve ser feito uma requição chamando o endpoint de login da API criada
                 - Se retorna 200 ele só vai para a tela de dashboard
                 - Se retorna 401, exibi a mensagem e não vai para a tela de dashboard
 
+- Pág dashboard estilizada com tawildin
+    - Texto no meio escrito "Bem-vindo, admin!"
+    - Abaixo botão de Sair com o componente de botão
+        - Quando clica redireciona para a tela de login
+
 - Testes
     - Unitarios (Jest)
         - Testar se ao pegar o inputComponent e passar o nome do label se ele renderiza essa label
+
+        - Testar se ao pegar o buttonComponent e passar o nome da label se ele renderiza essa label
 
     - E2E (Cypress)
         - Fluxo login
@@ -51,3 +62,8 @@
             - Testar API Login certo com "admin@admin.com" e "123456"
                 - Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
                     - O retorno tem que ser um status 200
+
+            - Testar fluxo de lougout indo para a tela de login
+                - Pego o botão Sair
+                - Clico nele
+                - Verifico se a tela que estou é a de login tem que ser a de login
