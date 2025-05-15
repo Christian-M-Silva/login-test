@@ -1,6 +1,6 @@
-import type { inputProp } from "../../types";
+import type { labelProp } from "../../types";
 
-export function Input({ label }: inputProp) {
+export function Input({ label }: labelProp) {
     return (
         <div className="flex flex-col gap-1">
             <label className="text-sm font-medium text-gray-700 flex flex-col">

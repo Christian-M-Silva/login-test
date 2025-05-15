@@ -1,8 +1,10 @@
+import { Button } from "./components/buttonComponent/buttonComponent"
+
 function App() {
 
   return (
     <>
-      <div></div>
+      <div><Button label="teste"/></div>
     </>
   )
 }

@@ -1,3 +1,3 @@
-export type inputProp = {
+export type labelProp = {
     label: string
 }

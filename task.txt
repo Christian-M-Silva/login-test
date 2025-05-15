@@ -5,9 +5,9 @@ x Criar um componente de input
     x Ele espera receber uma prop que é uma string, que é a label que irá na parte superior da string
     x O input será um pouco arredondado
 
-- Criar um componente de botão
-    - Ele espera receber uma prop que é uma string, que é a label que ficará no botão
-    - Ver uma estilização para o botão
+x Criar um componente de botão
+    x Ele espera receber uma prop que é uma string, que é a label que ficará no botão
+    x Ver uma estilização para o botão
 
 - Criar uma API com um endpoint ficticio
     - Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
