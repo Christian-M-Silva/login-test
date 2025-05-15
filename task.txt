@@ -9,7 +9,7 @@ x Criar um componente de botão
     x Ele espera receber uma prop que é uma string, que é a label que ficará no botão
     x Ver uma estilização para o botão
 
-- Criar uma API com um endpoint ficticio
+x Criar uma API com um endpoint ficticio
     - Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
         - controller (login)
             - Verifica se o que foi recebido no body se o e-mail é igual a admin@admin.com e a senha é igual a 123456
