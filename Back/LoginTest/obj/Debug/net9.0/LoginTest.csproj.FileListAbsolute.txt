@@ -33,3 +33,6 @@ C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Bac
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\LoginTest.pdb
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\LoginTest.genruntimeconfig.cache
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\ref\LoginTest.dll
+C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
