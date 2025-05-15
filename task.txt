@@ -1,10 +1,9 @@
 x Criar projeto react e configurar
     x Tawildin css
-    - router
 
-- Criar um componente de input
-    - Ele espera receber uma prop que é uma string, que é a label que irá na parte superior da string
-    - O input será um pouco arredondado
+x Criar um componente de input
+    x Ele espera receber uma prop que é uma string, que é a label que irá na parte superior da string
+    x O input será um pouco arredondado
 
 - Criar um componente de botão
     - Ele espera receber uma prop que é uma string, que é a label que ficará no botão
