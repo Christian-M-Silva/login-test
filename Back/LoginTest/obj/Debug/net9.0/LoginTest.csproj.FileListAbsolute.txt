@@ -20,12 +20,6 @@ C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Bac
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets\msbuild.LoginTest.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets\msbuild.LoginTest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets\msbuild.build.LoginTest.props
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.LoginTest.props
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.LoginTest.props
-C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\LoginTest.csproj.Up2Date
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\LoginTest.dll
@@ -36,3 +30,4 @@ C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Bac
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ShadowHood\Documents\projetos_pessoais\aprender-projetos\login-test\Back\LoginTest\obj\Debug\net9.0\staticwebassets.build.json.cache

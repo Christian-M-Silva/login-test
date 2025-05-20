@@ -10,12 +10,11 @@ x Criar um componente de botão
     x Ver uma estilização para o botão
 
 x Criar uma API com um endpoint ficticio
-    - PAREI NA PARTE DE CONFIGURAR A CONTROLLER
-    - Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
-        - controller (login)
-            - Verifica se o que foi recebido no body se o e-mail é igual a admin@admin.com e a senha é igual a 123456
-                - Se sim retorna status 200
-                - Se não retorna "Usuário ou senha inválidos" com status 401
+    X Usando c# criar a estrutura de uma API, sem a conexão com nenhum banco de dados, só para criar um endpoint até um controller
+        X controller (login)
+            x Verifica se o que foi recebido no body se o e-mail é igual a admin@admin.com e a senha é igual a 123456
+                x Se sim retorna status 200
+                x Se não retorna "Usuário ou senha inválidos" com status 401
 
 - Tela de login estilizada com tawildin
     - Terá 2 campos de escrever, um será de e-mail e o outro de senha

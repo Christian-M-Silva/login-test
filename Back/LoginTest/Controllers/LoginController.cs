@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LoginTest.Shared;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,9 +11,14 @@ namespace LoginTest.Controllers
     {
         // POST api/<LoginController>
         [HttpPost]
-        public ActionResult Post([FromBody] string value)
+        public ActionResult Post([FromBody] RequestModels request)
         {
-            return Ok(value);
+            if (request.Email == "admin@admin.com" && request.Password == "123456")
+            {
+                return Ok(request);
+            }
+
+            return Unauthorized(new { message = "Usuário ou senha inválidos" });
         }
     }
 }
