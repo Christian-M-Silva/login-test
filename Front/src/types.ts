@@ -1,3 +1,4 @@
-export type labelProp = {
-    label: string
+export type props = {
+    label: string,
+    className?: string
 }

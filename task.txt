@@ -16,9 +16,11 @@ x Criar uma API com um endpoint ficticio
                 x Se sim retorna status 200
                 x Se não retorna "Usuário ou senha inválidos" com status 401
 
-- Tela de login estilizada com tawildin
-    - Terá 2 campos de escrever, um será de e-mail e o outro de senha
-    - Botão de entrar com o componente de botão
+x Ajeitar as Routes
+
+x Tela de login estilizada com tawildin (https://chatgpt.com/c/682c7cea-b66c-8010-b4f8-1ba595d83b69)
+    x Terá 2 campos de escrever, um será de e-mail e o outro de senha
+    x Botão de entrar com o componente de botão
         - Ao clicar no botão de entrar 
             - Deve ser feito uma requição chamando o endpoint de login da API criada
                 - Se retorna 200 ele só vai para a tela de dashboard
