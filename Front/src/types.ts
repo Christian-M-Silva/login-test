@@ -1,6 +1,6 @@
-import type { ButtonHTMLAttributes } from "react";
+import type { ButtonHTMLAttributes, InputHTMLAttributes } from "react";
 
-export type props = {
+export type propsExtend = {
   label: string;
 };
 
@@ -11,4 +11,7 @@ export interface BodyRequestLogin {
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-    props {}
+    propsExtend {}
+export interface InputProps
+  extends InputHTMLAttributes<HTMLInputElement>,
+    propsExtend {}
