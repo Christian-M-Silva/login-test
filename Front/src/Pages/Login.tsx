@@ -1,5 +1,15 @@
+import axios from "axios";
 import { Button } from "../components/buttonComponent/buttonComponent";
 import { Input } from "../components/inputComponent/inputComponent"
+import type { BodyRequestLogin } from "../types";
+
+async function login() {
+    const body: BodyRequestLogin = {
+        Email: '',
+        Password: ''
+    }
+    await axios.post('https://localhost:44346/api/Login', body).then((res) => console.log(res)).catch((err) => console.log(err))
+}
 
 export function Login() {
     return (
@@ -11,7 +21,10 @@ export function Login() {
                 <form className="space-y-5">
                     <Input label="E-mail" />
                     <Input label="Password" />
-                    <Button label="Entrar" className="w-full" />
+                    <Button label="Entrar" className="w-full" onClick={(e) => {
+                        e.preventDefault()
+                        login()
+                    }} />
                 </form>
             </div>
         </div>

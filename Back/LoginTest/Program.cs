@@ -4,6 +4,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllPolicy",
+        policy =>
+        {
+            policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        });
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -26,6 +35,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("v1/swagger.json", "Api login test");
 });
+
+app.UseCors("AllowAllPolicy");
 
 app.UseHttpsRedirection();
 
