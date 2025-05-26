@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
 } from "react-router";
 import { Login } from "./Pages/Login";
-import { Button } from "./components/buttonComponent/buttonComponent";
+import { Dashboard } from "./Pages/Dashboard";
 
 
 export const router = createBrowserRouter([
@@ -13,6 +13,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Button label="teste" />,
+    element: <Dashboard/>,
   },
 ]);

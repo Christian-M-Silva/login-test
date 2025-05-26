@@ -26,11 +26,11 @@ x Tela de login estilizada com tawildin (https://chatgpt.com/c/682c7cea-b66c-801
                 x Se retorna 200 ele só vai para a tela de dashboard (add o redirecionamento para a tela de dashboard)
                 x Se retorna 401, exibi a mensagem e não vai para a tela de dashboard
 
-- Pág dashboard estilizada com tawildin
-    - Texto no meio escrito "Bem-vindo, admin!"
-    - Abaixo botão de Sair com o componente de botão
-        - Quando clica redireciona para a tela de login
-    - Incluir esse componente de pag no arquivo de route
+x Pág dashboard estilizada com tawildin
+    X Texto no meio escrito "Bem-vindo, admin!"
+    X Abaixo botão de Sair com o componente de botão
+        x Quando clica redireciona para a tela de login
+    x Incluir esse componente de pag no arquivo de route
 
 - Testes
     - Unitarios (Jest)
