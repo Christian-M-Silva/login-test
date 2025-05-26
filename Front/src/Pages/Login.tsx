@@ -14,10 +14,9 @@ async function login(email: string, password: string, navigate: ReturnType<typeo
     try {
         await axios.post('https://localhost:44346/api/Login', body)
         navigate("/dashboard");
-
     } catch (err) {
         const error = err as AxiosError<LoginErrorResponse>;
-        console.log("🚀 ~ login ~ error:", error)
+        alert(error.response?.data.message)
     }
 }
 

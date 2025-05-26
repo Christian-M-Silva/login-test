@@ -24,7 +24,7 @@ x Tela de login estilizada com tawildin (https://chatgpt.com/c/682c7cea-b66c-801
         x Ao clicar no botão de entrar 
             x Deve ser feito uma requisição chamando o endpoint de login da API criada (preciso pegar os valores dos inputs)
                 x Se retorna 200 ele só vai para a tela de dashboard (add o redirecionamento para a tela de dashboard)
-                - Se retorna 401, exibi a mensagem e não vai para a tela de dashboard
+                x Se retorna 401, exibi a mensagem e não vai para a tela de dashboard
 
 - Pág dashboard estilizada com tawildin
     - Texto no meio escrito "Bem-vindo, admin!"
