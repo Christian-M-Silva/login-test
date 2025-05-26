@@ -36,7 +36,7 @@ X Testes
     x Unitarios (Jest)
         x Testar se ao pegar o inputComponent e passar o nome do label se ele renderiza essa label
 
-        - Testar se ao pegar o buttonComponent e passar o nome da label se ele renderiza essa label
+        x Testar se ao pegar o buttonComponent e passar o nome da label se ele renderiza essa label
 
     - E2E (Cypress)
         - Fluxo login
