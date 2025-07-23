@@ -5,11 +5,15 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "types": ["cypress"],
     "module": "ESNext",
     "target": "ESNext",
     "jsx": "react-jsx",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["**/*.ts"]
 }
