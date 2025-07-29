@@ -54,14 +54,14 @@ X Testes
                     x Usar o intercept para simular a requisição retornando o status 401 e a mensagem "Usuário ou senha inválidos"
                 x Ver se "Usuário ou senha inválidos" é exibido na tela
 
-            - Testar API Login errado sem "admin@admin.com" e "123456"
-                - Preciso de um array de objetos contendo os campos e-mail e password
-                    - email: "admin@admin.com" e senha "12345"
-                    - email: "user@admin.com" e senha "123456"
-                    - email: "user@admin.com" e senha "12345"
-                - Gero um loop usando esse array onde  
-                    - Faço o .request() para o endpoint de login enviando os dados de e-mail e password
-                        - O retorno em todos tem que ter o status 401 e a mensagem "Usuário ou senha inválidos"
+            x Testar API Login errado sem "admin@admin.com" e "123456"
+                x Preciso de um array de objetos contendo os campos e-mail e password
+                    x email: "admin@admin.com" e senha "12345"
+                    x email: "user@admin.com" e senha "123456"
+                    x email: "user@admin.com" e senha "12345"
+                x Gero um loop usando esse array onde  
+                    x Faço o .request() para o endpoint de login enviando os dados de e-mail e password
+                        x O retorno em todos tem que ter o status 401 e a mensagem "Usuário ou senha inválidos"
 
             - Testar API Login certo com "admin@admin.com" e "123456"
                 - Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
