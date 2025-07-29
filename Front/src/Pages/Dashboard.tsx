@@ -7,7 +7,7 @@ export function Dashboard() {
     return (
         <div className="min-h-screen flex items-center flex-col gap-1 justify-center bg-emerald-800">
             <h1 className="text-2xl">Bem-vindo, admin!</h1>
-            <Button label="Sair" onClick={() => navigate('/')}/>
+            <Button data-cy="button-logout" label="Sair" onClick={() => navigate('/')}/>
         </div>
     );
 }

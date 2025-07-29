@@ -67,7 +67,7 @@ X Testes
                 x Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
                     x O retorno tem que ser um status 200
 
-            - Testar fluxo de lougout indo para a tela de login
-                - Pego o botão Sair
-                - Clico nele
-                - Verifico se a tela que estou é a de login tem que ser a de login
+            x Testar fluxo de logout indo para a tela de login
+                x Pego o botão Sair
+                x Clico nele
+                x Verifico se a tela que estou é a de login tem que ser a de login
