@@ -38,8 +38,8 @@ X Testes
 
         x Testar se ao pegar o buttonComponent e passar o nome da label se ele renderiza essa label
 
-    - E2E (Cypress)
-        - Fluxo login
+    x E2E (Cypress)
+        x Fluxo login
             x Login certo usando "admin@admin.com" e "123456"
                 x Preciso que o campo de e-mail seja preenchido com "admin@admin.com"
                 x Preciso que o campo de senha seja preenchido com "123456"
@@ -47,12 +47,12 @@ X Testes
                     x Usar o intercept para simular a requisição retornando o status 200
                 x Após o retorno ele tem que verificar se está na tela de dashboard
 
-            - Login errado sem "admin@admin.com" e "123456"
-                - Preciso que o campo de e-mail seja preenchido com "user@admin.com"
-                - Preciso que o campo de senha seja preenchido com "1234"
-                - Clicar no botão entrar
-                    - Usar o intercept para simular a requisição retornando o status 401 e a mensagem "Usuário ou senha inválidos"
-                - Ver se "Usuário ou senha inválidos" é exibido na tela
+            x Login errado sem "admin@admin.com" e "123456"
+                x Preciso que o campo de e-mail seja preenchido com "user@admin.com"
+                x Preciso que o campo de senha seja preenchido com "1234"
+                x Clicar no botão entrar
+                    x Usar o intercept para simular a requisição retornando o status 401 e a mensagem "Usuário ou senha inválidos"
+                x Ver se "Usuário ou senha inválidos" é exibido na tela
 
             - Testar API Login errado sem "admin@admin.com" e "123456"
                 - Preciso de um array de objetos contendo os campos e-mail e password
