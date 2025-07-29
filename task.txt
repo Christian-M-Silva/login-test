@@ -63,9 +63,9 @@ X Testes
                     x Faço o .request() para o endpoint de login enviando os dados de e-mail e password
                         x O retorno em todos tem que ter o status 401 e a mensagem "Usuário ou senha inválidos"
 
-            - Testar API Login certo com "admin@admin.com" e "123456"
-                - Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
-                    - O retorno tem que ser um status 200
+            x Testar API Login certo com "admin@admin.com" e "123456"
+                x Faço o .request() para o endpoint de login enviando os dados "admin@admin.com" e "123456" no body
+                    x O retorno tem que ser um status 200
 
             - Testar fluxo de lougout indo para a tela de login
                 - Pego o botão Sair

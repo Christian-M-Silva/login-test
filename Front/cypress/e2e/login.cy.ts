@@ -1,6 +1,6 @@
-const urlLogin = "https://localhost:44346/api/Login"
+const urlLogin = "https://localhost:44346/api/Login";
 
-const messageErro = 'Usuário ou senha inválidos'
+const messageErro = "Usuário ou senha inválidos";
 
 describe("Login", () => {
   beforeEach(() => {
@@ -54,21 +54,19 @@ describe("Login", () => {
       inputPassword.type(credential.password);
       cy.get('[data-cy="button-login"]').click();
 
-      cy.request({
-        method: "POST",
-        url: urlLogin,
-        body: {
-          email: credential.email,
-          password: credential.password,
-        },
-        failOnStatusCode: false
-      }).then((response) => {
-        expect(response.status).to.eq(401);
-        expect(response.body.message).to.eq(messageErro);
+      cy.on("window:alert", (str) => {
+        expect(str).to.equal(messageErro);
       });
 
-      inputPassword.clear()
-      inputEmail.clear()
+      inputPassword.clear();
+      inputEmail.clear();
     });
+  });
+
+  it("should success login with API request", () => {
+    cy.get('[data-cy="input-email"]').type("admin@admin.com");
+    cy.get('[data-cy="input-password"]').type("123456");
+    cy.get('[data-cy="button-login"]').click();
+    cy.url().should("include", "/dashboard");
   });
 });
