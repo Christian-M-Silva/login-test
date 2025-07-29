@@ -40,12 +40,12 @@ X Testes
 
     - E2E (Cypress)
         - Fluxo login
-            - Login certo usando "admin@admin.com" e "123456"
-                - Preciso que o campo de e-mail seja preenchido com "admin@admin.com"
-                - Preciso que o campo de senha seja preenchido com "123456"
-                - Clicar no botão entrar
-                    - Usar o intercept para simular a requisição retornando o status 200
-                - Após o retorno ele tem que verificar se está na tela de dashboard
+            x Login certo usando "admin@admin.com" e "123456"
+                x Preciso que o campo de e-mail seja preenchido com "admin@admin.com"
+                x Preciso que o campo de senha seja preenchido com "123456"
+                x Clicar no botão entrar
+                    x Usar o intercept para simular a requisição retornando o status 200
+                x Após o retorno ele tem que verificar se está na tela de dashboard
 
             - Login errado sem "admin@admin.com" e "123456"
                 - Preciso que o campo de e-mail seja preenchido com "user@admin.com"

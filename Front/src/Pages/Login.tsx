@@ -32,9 +32,11 @@ export function Login() {
                     Login
                 </h2>
                 <form className="space-y-5">
-                    <Input label="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
-                    <Input label="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <Button label="Entrar" className="w-full" onClick={(e) => {
+                    <Input data-cy="input-email" label="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+                    <Input data-cy="input-password" label="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    
+                    <Button data-cy="button-login" label="Entrar" className="w-full" onClick={(e) => {
                         e.preventDefault()
                         login(email, password, navigate)
                     }} />
